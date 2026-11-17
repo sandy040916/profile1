@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="heyitssandy_ — Sandy 的個人介紹與創意日常。" />
+<title>heyitssandy_ — Sandy's little world</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--ice:#C8D9E6;--blue:#567CBD;--slate:#5D7785;--cream:#F5EFEB;--ink:#263746;--white:#fffdfa;--line:rgba(38,55,70,.15);--shadow:0 18px 50px rgba(54,83,111,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans','Noto Sans TC',sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1120px,calc(100% - 44px));margin:auto}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.logo{font-size:21px;font-weight:800;letter-spacing:-1px;color:var(--blue)}.logo span{color:var(--slate)}nav{display:flex;gap:30px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}nav a{opacity:.72;transition:.2s}nav a:hover{opacity:1;color:var(--blue)}.menu{display:none;border:0;background:none;font-size:24px;color:var(--blue)}
+.hero{min-height:660px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:40px;padding:70px 0 90px;position:relative}.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:800;color:var(--slate)}.eyebrow:before{content:'';width:28px;height:1px;background:var(--blue)}h1{font-size:clamp(60px,9vw,112px);line-height:.88;letter-spacing:-8px;margin:24px 0 25px;color:var(--blue);font-weight:800}h1 span{display:block;color:var(--ink);font-size:.62em;letter-spacing:-4px;margin-top:13px}.hero-copy{max-width:450px;font-size:15px;line-height:2;color:#536675}.hero-copy strong{color:var(--blue)}.hero-actions{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.pill{padding:13px 20px;border-radius:99px;background:var(--blue);color:white;font-size:12px;font-weight:700;letter-spacing:.5px;box-shadow:0 8px 20px rgba(86,124,189,.2);transition:.2s}.pill:hover{transform:translateY(-3px)}.pill.ghost{background:transparent;color:var(--blue);border:1px solid var(--blue);box-shadow:none}.hero-art{height:480px;position:relative;display:grid;place-items:center}.photo-frame{width:min(340px,75%);height:410px;background:var(--ice);border:12px solid var(--white);box-shadow:var(--shadow);transform:rotate(4deg);position:relative;display:grid;place-items:center;overflow:hidden}.photo-frame:before{content:'S';font-size:260px;font-weight:800;color:rgba(86,124,189,.18);position:absolute;bottom:-90px;left:10px}.photo-inner{z-index:1;text-align:center;padding:25px}.photo-inner .sun{width:115px;height:115px;border-radius:50%;background:#f3d9bd;margin:0 auto 20px;position:relative}.photo-inner .sun:after{content:'✳';position:absolute;font-size:82px;color:var(--blue);inset:10px 0 0;text-align:center}.photo-inner p{font-size:12px;letter-spacing:3px;font-weight:800;color:var(--slate)}.sticker{position:absolute;z-index:2;padding:13px 17px;background:var(--white);box-shadow:var(--shadow);font-size:12px;font-weight:800;letter-spacing:1px}.sticker.one{top:45px;right:0;transform:rotate(8deg);color:var(--blue)}.sticker.two{bottom:55px;left:0;transform:rotate(-9deg);background:var(--blue);color:white}.spark{position:absolute;color:var(--blue);font-size:42px}.spark.s1{top:35px;left:30px}.spark.s2{right:20px;bottom:25px;font-size:27px}.side-note{position:absolute;right:-35px;top:50%;writing-mode:vertical-rl;font-size:10px;letter-spacing:3px;color:#8ca0ad}
+.marquee{background:var(--blue);color:white;padding:14px 0;overflow:hidden;white-space:nowrap;font-size:12px;letter-spacing:3px;font-weight:700}.marquee div{display:inline-block;animation:move 24s linear infinite}@keyframes move{to{transform:translateX(-50%)}}section{padding:105px 0}.section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:42px;gap:20px}.kicker{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);font-weight:800}.section-title{font-size:clamp(36px,5vw,58px);letter-spacing:-3px;margin:9px 0 0;line-height:1}.section-note{max-width:280px;font-size:12px;line-height:1.8;color:#71818c}.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:center}.about-card{background:var(--ice);padding:35px;min-height:340px;position:relative;overflow:hidden}.about-card:after{content:'HELLO!';position:absolute;bottom:-25px;left:8px;font-size:85px;font-weight:800;letter-spacing:-7px;color:rgba(255,255,255,.45)}.about-card .number{font-size:12px;letter-spacing:2px;color:var(--slate);font-weight:700}.about-card .big{font-size:38px;line-height:1.2;font-weight:800;letter-spacing:-2px;margin-top:75px;color:var(--blue)}.about-text{font-size:15px;line-height:2.1;color:#596b78}.about-text strong{color:var(--blue)}.facts{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.tag{border:1px solid rgba(86,124,189,.35);border-radius:99px;padding:8px 13px;font-size:11px;color:var(--blue);font-weight:700;background:rgba(255,255,255,.45)}
+.interests{background:#e9e3df}.interest-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.interest{min-height:220px;padding:22px;background:var(--white);position:relative;overflow:hidden;transition:.25s}.interest:hover{transform:translateY(-6px);box-shadow:var(--shadow)}.interest:nth-child(2){background:var(--ice)}.interest:nth-child(3){background:#dce4e6}.interest:nth-child(4){background:#e6d8ce}.interest .emoji{font-size:35px}.interest h3{font-size:19px;margin:28px 0 8px;letter-spacing:-.5px}.interest p{font-size:11px;line-height:1.8;color:#657681;margin:0}.interest .idx{position:absolute;right:16px;top:16px;font-size:10px;color:#8c9aa2;letter-spacing:1px}
+.works-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.work{min-height:300px;padding:28px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}.work.large{background:#d5e2eb}.work.small1{background:#e7d9d0;min-height:140px}.work.small2{background:#dce3df;min-height:140px}.work-stack{display:grid;gap:18px}.work-label{font-size:10px;letter-spacing:2px;font-weight:800;color:var(--slate)}.work h3{font-size:30px;line-height:1.1;letter-spacing:-1.5px;max-width:300px;margin:10px 0}.work p{font-size:12px;line-height:1.8;color:#647681;max-width:310px}.work-art{position:absolute;right:25px;bottom:18px;font-size:115px;opacity:.22;transform:rotate(-10deg)}.work.small1 .work-art,.work.small2 .work-art{font-size:70px}.work-link{font-size:11px;font-weight:800;color:var(--blue);letter-spacing:1px;z-index:1}
+.contact{background:var(--blue);color:white;padding:85px 0}.contact .kicker{color:#dce9f3}.contact h2{font-size:clamp(42px,7vw,78px);letter-spacing:-5px;line-height:.98;margin:18px 0 22px}.contact p{font-size:13px;line-height:1.9;color:#e1eaf2;max-width:430px}.contact-row{display:flex;align-items:end;justify-content:space-between;gap:25px}.contact .pill{background:var(--cream);color:var(--blue);box-shadow:none}.footer{padding:23px 0;display:flex;justify-content:space-between;font-size:10px;letter-spacing:1px;color:#71818c}.to-top{border:1px solid var(--line);border-radius:50%;width:34px;height:34px;display:grid;place-items:center;color:var(--blue)}
+@media(max-width:760px){.wrap{width:min(100% - 34px,560px)}.topbar{height:66px}nav{display:none;position:absolute;top:66px;left:0;right:0;background:var(--cream);padding:22px;z-index:5;flex-direction:column;gap:18px;border-bottom:1px solid var(--line)}nav.open{display:flex}.menu{display:block}.hero{grid-template-columns:1fr;padding:65px 0 55px;gap:20px}.hero-art{height:390px}.photo-frame{height:330px;width:270px}.photo-frame:before{font-size:210px}.side-note{right:0}.section-head{align-items:start;flex-direction:column}.about-grid{grid-template-columns:1fr;gap:30px}.about-card{min-height:280px}.about-card .big{margin-top:45px}.interest-grid{grid-template-columns:repeat(2,1fr)}.interest{min-height:190px;padding:17px}.works-grid{grid-template-columns:1fr}.work{min-height:260px}.contact-row{align-items:start;flex-direction:column}.footer{gap:15px;flex-wrap:wrap}section{padding:75px 0}h1{letter-spacing:-5px}}
+@media(max-width:390px){.interest-grid{grid-template-columns:1fr 1fr}.interest h3{font-size:16px}.hero-art{height:340px}.photo-frame{height:290px;width:235px}}
+</style>
+</head>
+<body>
+<header class="wrap topbar">
+  <a class="logo" href="#home">heyits<span>sandy_</span></a>
+  <nav id="nav"><a href="#about">about</a><a href="#interests">interests</a><a href="#works">creative log</a><a href="#contact">contact</a></nav>
+  <button class="menu" id="menu" aria-label="開啟選單">☰</button>
+</header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow">A LITTLE INTRODUCTION · 2026</div>
+      <h1>HELLO<span>I'm Sandy!</span></h1>
+      <p class="hero-copy">韓文系 × 廣告設計，正在收集靈感、練習創作，也努力把腦海裡的小點子變成看得見的作品。<strong>Welcome to my little world.</strong></p>
+      <div class="hero-actions"><a class="pill" href="#about">GET TO KNOW ME ↗</a><a class="pill ghost" href="#works">MY CREATIVE LOG</a></div>
+    </div>
+    <div class="hero-art" aria-label="Sandy 個人主視覺插畫">
+      <span class="spark s1">✳</span><div class="photo-frame"><div class="photo-inner"><div class="sun"></div><p>CREATIVE · CURIOUS · SANDY</p></div></div>
+      <div class="sticker one">NICE TO MEET YOU!</div><div class="sticker two">SEOUL / TAIPEI ♡</div><span class="spark s2">✦</span><div class="side-note">MADE OF LITTLE MOMENTS —</div>
+    </div>
+  </div>
+  <div class="marquee"><div>✳ DESIGN IS EVERYWHERE　✦ KEEP COLLECTING IDEAS　✳ MAKE SOMETHING YOURS　✦ DESIGN IS EVERYWHERE　✳ KEEP COLLECTING IDEAS　✦ MAKE SOMETHING YOURS　</div></div>
+  <section id="about"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">01 / ABOUT ME</div><h2 class="section-title">A bit about me.</h2></div><p class="section-note">不只是自我介紹，還有一些構成 Sandy 的小小片段。</p></div>
+    <div class="about-grid"><div class="about-card"><div class="number">PROFILE NO. 001</div><div class="big">Curious mind,<br>creative heart.</div></div>
+      <div><p class="about-text">嗨！我是 <strong>Sandy（采璇 / 채선）</strong>，來自台北，目前就讀政治大學韓文系，也投入廣告與設計相關的學習。比起把自己定義成某一種人，我更喜歡探索不同領域，從日常生活、音樂、展覽和社群裡尋找新的靈感。<br><br>我喜歡把想法整理成版面，也享受從配色、字體到細節慢慢完成一件作品的過程。希望未來能持續累積作品，讓每一次嘗試都成為下一次創作的養分。</p>
+      <div class="facts"><span class="tag">📍 Taipei, Taiwan</span><span class="tag">한국어 전공</span><span class="tag">Advertising & Design</span><span class="tag">ISFJ</span></div></div>
+    </div>
+  </div></section>
+  <section class="interests" id="interests"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">02 / THINGS I LOVE</div><h2 class="section-title">My little universe.</h2></div><p class="section-note">日常喜歡的事物，也是靈感的來源。</p></div>
+    <div class="interest-grid">
+      <article class="interest"><span class="idx">01</span><div class="emoji">🎨</div><h3>Design & Layout</h3><p>平面設計、海報、編排，還有那些讓畫面更有趣的小細節。</p></article>
+      <article class="interest"><span class="idx">02</span><div class="emoji">🎧</div><h3>K-pop & Fandom</h3><p>聽歌、追星、看舞台，也喜歡研究專輯視覺和宣傳設計。</p></article>
+      <article class="interest"><span class="idx">03</span><div class="emoji">🪩</div><h3>Dance</h3><p>跟著音樂動起來，享受練習和表演帶來的快樂。</p></article>
+      <article class="interest"><span class="idx">04</span><div class="emoji">📓</div><h3>Daily Finds</h3><p>逛展、逛街、拍照、看 vlog，把生活裡的小發現收進靈感庫。</p></article>
+    </div>
+  </div></section>
+  <section id="works"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">03 / CREATIVE LOG</div><h2 class="section-title">Things in progress.</h2></div><p class="section-note">一些正在探索的方向。未來也會慢慢把完成作品放進來！</p></div>
+    <div class="works-grid"><article class="work large"><div><div class="work-label">01 — VISUAL DESIGN</div><h3>Posters, layouts<br>& visual stories.</h3><p>從品牌海報、活動主視覺到社群圖像，練習用視覺說出一個故事。</p></div><div class="work-art">✳</div><a class="work-link" href="#contact">LET'S CREATE ↗</a></article>
+      <div class="work-stack"><article class="work small1"><div><div class="work-label">02 — KOREAN</div><h3>Language & Culture</h3><p>在語言與文化之間，持續探索新的視角。</p></div><div class="work-art">한</div></article><article class="work small2"><div><div class="work-label">03 — IDEAS</div><h3>Little experiments</h3><p>把日常觀察變成創意練習。</p></div><div class="work-art">♡</div></article></div>
+    </div>
+  </div></section>
+  <section class="contact" id="contact"><div class="wrap contact-row"><div><div class="kicker">04 / SAY HELLO</div><h2>Let's make<br>something lovely.</h2><p>謝謝你來到我的小小網站！如果你也喜歡設計、音樂，或只是想交流生活靈感，歡迎來打聲招呼。</p></div><a class="pill" href="mailto:hello@example.com?subject=Hello%20Sandy">SAY HELLO ↗</a></div></section>
+</main>
+<footer class="wrap footer"><span>© 2026 HEYITSSANDY_ · MADE WITH CURIOSITY</span><span>TAIPEI, TAIWAN ♡</span><a class="to-top" href="#home" aria-label="回到頂部">↑</a></footer>
+<script>const menu=document.getElementById('menu');const nav=document.getElementById('nav');menu.addEventListener('click',()=>nav.classList.toggle('open'));nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));</script>
+</body>
+</html>
